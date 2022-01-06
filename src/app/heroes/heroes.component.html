@@ -7,15 +7,7 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero">
-  <h2>{{ selectedHero.name | titlecase }} Details</h2>
-  <div><span>id: </span>{{ selectedHero.id }}</div>
-  <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name" />
-    <!-- <input type="text" [value]="hero.name" (change)="nameChange" -->
-  </div>
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
 <!-- <p>{{ hero | json }}</p>
 <p>Today is {{ today | date }}</p> -->
