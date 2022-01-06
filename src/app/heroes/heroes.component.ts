@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
   hero: Hero = {id: 1, name: 'Windstorm'};
+  today: number = Date.now();
 
   constructor() {
     console.log('HeroesComponent Constructor called..');
